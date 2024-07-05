@@ -42,7 +42,7 @@ if(isset($host)) {
 				$tempLine = '';
 			}
 		}
-		echo 'Cài đặt thành công. Vui lòng xóa thư mục <span style="color:red">install</span> để tránh rủi ro.';
+		echo 'Cài đặt thành công. Vui lòng xóa thư mục <span style="color:red">install</span> để tránh rủi ro.<br><a href="/">Xem trang web</a>';
 
 	} else {
 		echo "Thông tin database không đúng.";
