@@ -23,7 +23,7 @@ function login(txt,el) {
 			url: "/response.php",
 			data: {act: "login", user: user.val(),pass: pass.val()},
 			success: function(response) {
-				console.log(response);
+				//console.log(response);
 				
 				res = $.parseJSON(response);
 				if(res.res == 'false') {
