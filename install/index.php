@@ -13,6 +13,10 @@ $name = isset($_POST['name']) ? $_POST['name'] : null;
 if(isset($host)) {
 	$ketnoi = mysqli_connect($host,$user,$pass,$name);
 	if($ketnoi) {
+		$htaccess_file = fopen($root.'/.htaccess', 'w+');
+		fwrite($htaccess_file,"RewriteEngine on\nRewriteRule ^main.js$ /jsFolders/index.php\nRewriteRule ^pictures/(.*)/(.*)$ /uploads/$2");
+		fclose($htaccess_file);
+		
 		$config_file = fopen($root.'/_config.php', 'w+');
 		fwrite($config_file, "<?php\n\$db_host = '$host';\n\$db_user = '$user';\n\$db_pass = '$pass';\n\$db_name = '$name';\n?>");
 		fclose($config_file);
