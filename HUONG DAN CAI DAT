@@ -1,2 +1,2 @@
--Tạo database.
-- Cài đặt tự động: /install - điền đầy đủ thông tin database và nhấn cài.
+Bước 1: Tạo database mới nếu chưa có
+Bước 2: Cài đặt tự động: /install, điền đầy đủ thông tin database mới tạo vào và nhấn cài đặt
